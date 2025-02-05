@@ -1,0 +1,36 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 90vh;
+    align-items: center;
+}
+.popular h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;  /* Allow items to wrap to the next line */
+    justify-content: center;  /* Center the items horizontally */
+}
+.popular-item img {
+    width: 250px;  /* Set a fixed width */
+    height: 300px; /* Set height to maintain consistency */
+    object-fit: cover;  /* Ensure the image doesn't stretch */
+}
+
+.popular-item a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent, usually the item’s color */
+  }
+  

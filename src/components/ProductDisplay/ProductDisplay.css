@@ -1,0 +1,180 @@
+.product-display-right-stars img {
+  width: 18px;  /* Adjusted to your desired size */
+  height: 18px; /* Adjusted to your desired size */
+}
+
+.productdisplay {
+  display: flex;
+  margin: 0px 10%; /* Adjusted margin for responsiveness */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Added gap for better spacing */
+}
+
+.productdisplay-left {
+  display: flex;
+  gap: 10px; /* Reduced gap for better spacing */
+  flex: 1; /* Allow flexible sizing */
+}
+
+.productdisplay-img-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap for better spacing */
+}
+
+.productdisplay-img-list img {
+  height: 100px; /* Reduced image size */
+  width: 80px; /* Added fixed width for consistency */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.productdisplay-main-img {
+  width: 100%; /* Make image responsive */
+  max-width: 400px; /* Reduced max width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.productdisplay-right {
+  margin: 0px 20px; /* Adjusted margin for responsiveness */
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow flexible sizing */
+  justify-content: space-between;
+}
+
+.productdisplay-right h1 {
+  color: #3d3d3d;
+  font-size: 24px; /* Reduced font size for better fit */
+  font-weight: 600;
+}
+
+.product-display-right-stars {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px; /* Adjusted margin */
+  color: #1c1c1c;
+  font-size: 14px; /* Reduced font size for better fit */
+  align-items: center;
+}
+
+.productdisplay-right-prices {
+  display: flex;
+  gap: 20px; /* Reduced gap */
+  margin: 20px 0px; /* Adjusted margin */
+  font-weight: 700;
+  font-size: 20px; /* Reduced font size for better fit */
+}
+
+.productdisplay-right-price-old {
+  color: red;
+  text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+  color: green;
+}
+
+.productdisplay-right-size {
+  margin-top: 30px; /* Adjusted margin */
+  color: #656565;
+  font-size: 18px; /* Reduced font size for better fit */
+  font-weight: 600;
+}
+
+.productdisplay-right-sizes {
+  display: flex;
+  gap: 15px; /* Reduced gap */
+  margin: 20px 0px; /* Adjusted margin */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.productdisplay-right-sizes div {
+  padding: 12px 18px; /* Reduced padding */
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.productdisplay-right button {
+  padding: 15px 30px; /* Reduced padding */
+  width: 180px; /* Reduced button width */
+  font-size: 14px; /* Reduced font size */
+  font-weight: 600;
+  color: white;
+  background: #ff4141;
+  margin-bottom: 20px; /* Adjusted margin */
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.productdisplay-right-category {
+  margin-top: 10px;
+  font-size: 14px; /* Reduced font size for better fit */
+}
+
+.productdisplay-right-category span {
+  font-weight: 600;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .productdisplay {
+    margin: 0px 5%; /* Adjusted margin for smaller screens */
+  }
+
+  .productdisplay-left {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+  }
+
+  .productdisplay-img-list {
+    flex-direction: row; /* Display images horizontally on smaller screens */
+    gap: 5px; /* Reduced gap */
+  }
+
+  .productdisplay-img-list img {
+    height: 80px; /* Further reduced image size */
+    width: 60px; /* Further reduced width */
+  }
+
+  .productdisplay-main-img {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .productdisplay-right {
+    margin: 0px; /* Remove margin on smaller screens */
+  }
+
+  .productdisplay-right h1 {
+    font-size: 20px; /* Further reduced font size */
+  }
+
+  .productdisplay-right-prices {
+    font-size: 18px; /* Further reduced font size */
+  }
+
+  .productdisplay-right-size {
+    font-size: 16px; /* Further reduced font size */
+  }
+
+  .productdisplay-right-sizes div {
+    padding: 10px 15px; /* Further reduced padding */
+  }
+
+  .productdisplay-right button {
+    width: 100%; /* Full width button on smaller screens */
+  }
+}
+
+
+.productdisplay-right-description {
+  max-width: 100%;  /* Prevents overflow */
+  word-wrap: break-word;  /* Ensures text wraps properly */
+  line-height: 1.5;  /* Improves readability */
+  font-size: 14px;  /* Responsive font size */
+  color: #4a4a4a; /* Slightly softer text color */
+  margin-bottom: 15px; /* Space before the next section */
+}
+

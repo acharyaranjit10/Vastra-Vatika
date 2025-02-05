@@ -1,0 +1,33 @@
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* height: auto; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .new-collections h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .new-collections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+  }
+  
+  /* Grid Layout */
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Auto-adjust columns */
+    gap: 30px;
+    width: 80%;
+    justify-items: center;
+  }
+  
+  

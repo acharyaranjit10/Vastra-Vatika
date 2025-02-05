@@ -1,0 +1,14 @@
+.arrow {
+    width: 16px;  /* Adjust as needed */
+    height: 16px;  /* Adjust as needed */
+  }
+  .breadcrum{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+color: #5e5e5e;
+margin: 60px 170px;
+font-weight: 600px;
+text-transform: capitalize;
+  }
