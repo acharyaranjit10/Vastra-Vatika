@@ -11,6 +11,7 @@ import ap10_img from './newcol_6.jpg'
 import ap11_img from './newcol_7.jpg'
 import ap12_img from './newcol_8.jpg'
 import ap13_img from './newcol_9.jpg'
+import ap13_img from './newcol_9.jpg'
 
 
 let all_product =[
