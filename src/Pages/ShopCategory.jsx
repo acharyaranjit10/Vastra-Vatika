@@ -40,4 +40,5 @@ export const ShopCategory = (props) => {
       </div>
     </div>
   )
+  
 }
