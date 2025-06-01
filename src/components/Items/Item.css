@@ -42,3 +42,38 @@
   font-weight: 500;
   text-decoration: line-through;
 }
+
+@media (max-width: 768px) {
+  .item {
+    width: calc(50% - 20px); /* Show 2 items per row, considering gap */
+    padding: 15px;
+  }
+  .item img {
+    height: 250px;
+  }
+  .item-price-new,
+  .item-price-old {
+    font-size: 16px; /* Reduce font sizes */
+  }
+  .item p{ /* Assuming item name is in a p tag */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: calc(100% - 20px); /* Show 1 item per row */
+    /* Or use width: calc(50% - 10px); for 2 items with smaller gap */
+    padding: 10px;
+  }
+  .item img {
+    height: 200px; /* Ensure images scale correctly */
+  }
+  .item-price-new,
+  .item-price-old {
+    font-size: 14px; /* Further reduce font sizes */
+  }
+   .item p{ /* Assuming item name is in a p tag */
+    font-size: 13px;
+  }
+}

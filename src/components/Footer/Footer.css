@@ -60,3 +60,63 @@ color: #1a1a1a;
     width: 24px;
     height: 24px;
 }
+
+@media (max-width: 768px) {
+    .footer-links {
+        gap: 30px; /* Reduce gap between footer links */
+        font-size: 18px; /* Reduce font size for footer links */
+    }
+
+    .footer-social-icons {
+        gap: 15px; /* Reduce gap between social media icons */
+    }
+
+    .footer-copyright {
+        font-size: 18px; /* Reduce font size for copyright text */
+    }
+    .footer-icons-container img {
+        width: 20px; /* Reduce social icon size */
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        gap: 30px; /* Adjust overall footer gap */
+        padding: 20px; /* Add some padding to the footer */
+    }
+    .footer-logo{
+        gap:15px;
+    }
+    .footer-logo img{
+        width: 40px; /* Further reduce logo size if needed */
+    }
+    .footer-logo p{
+        font-size: 20px; /* Further reduce logo text size if needed */
+    }
+    .footer-links {
+        flex-direction: column; /* Change flex direction to column */
+        gap: 15px; /* Adjust gap for column layout */
+        font-size: 16px; /* Further reduce font size */
+        text-align: center; /* Center links */
+    }
+
+    .footer-social-icons {
+        gap: 10px; /* Further reduce gap for social icons */
+    }
+    .footer-icons-container{
+        padding: 8px; /* Adjust padding for smaller icons */
+    }
+    .footer-icons-container img {
+        width: 18px; /* Further reduce social icon size */
+        height: 18px;
+    }
+
+    .footer-copyright {
+        font-size: 14px; /* Further reduce font size for copyright */
+        gap: 15px; /* Adjust gap for copyright section */
+    }
+    .footer-copyright hr{
+        width: 90%; /* Make hr slightly wider for better mobile appearance */
+    }
+}

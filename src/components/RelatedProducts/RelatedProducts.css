@@ -20,4 +20,47 @@
     margin-top: 50px;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items when they wrap */
+}
+
+@media (max-width: 768px) {
+    .relatedproducts {
+        height: auto; /* Adjust height */
+        padding: 20px 10px; /* Add some padding */
+    }
+    .relatedproducts h1 {
+        font-size: 35px; /* Reduce font size for title */
+    }
+    .relatedproducts hr {
+        width: 150px;
+        height: 4px;
+    }
+    .rp-item {
+        gap: 15px; /* Reduce gap between items */
+        margin-top: 30px;
+    }
+    /* Assuming .item class from Item.css is used here for related products */
+    /* If not, specific styling for related product items would be needed */
+    .rp-item .item { /* Adjust item width if Item.css styles are used */
+        width: calc(33.33% - 20px); /* Example: 3 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .relatedproducts h1 {
+        font-size: 28px; /* Further reduce font size */
+    }
+    .relatedproducts hr {
+        width: 120px;
+    }
+    .rp-item {
+        margin-top: 20px;
+        /* Items will take width from Item.css's 480px media query (1 per row) */
+        /* Or adjust here if a different layout is needed for related products specifically */
+    }
+     /* Example: If you want 2 items per row specifically for related products on mobile */
+    .rp-item .item {
+        width: calc(50% - 10px); /* Show 2 items per row with smaller gap */
+    }
 }

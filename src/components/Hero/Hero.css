@@ -61,4 +61,104 @@
     max-width: 500px; /* Set a max-width to avoid it getting too big */
     height: auto;
   }
-  
+
+@media (max-width: 1024px) {
+    .hero-left {
+        padding-left: 100px; /* Reduce padding-left */
+    }
+
+    .hero-left p {
+        font-size: 80px; /* Reduce font size for large text */
+    }
+
+    .hero-hand-icon img {
+        width: 80px; /* Reduce size of hand icon */
+    }
+
+    .hero-latest-btn {
+        width: 280px; /* Reduce width of button */
+        height: 60px; /* Reduce height of button */
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack left and right sections */
+        height: auto; /* Adjust height for stacked content */
+        padding: 40px 20px; /* Add some padding */
+    }
+
+    .hero-left {
+        padding-left: 0; /* Remove specific padding */
+        align-items: center; /* Center align text and elements */
+        text-align: center;
+        gap: 15px; /* Adjust gap for smaller screen */
+    }
+
+    .hero-left h2 {
+        font-size: 22px; /* Further reduce font size */
+    }
+
+    .hero-left p {
+        font-size: 60px; /* Further reduce font size for large text */
+    }
+
+    .hero-hand-icon img {
+        width: 60px; /* Further reduce size of hand icon */
+    }
+    .hero-hand-icon{
+        justify-content: center; /* Center hand icon elements */
+    }
+
+    .hero-latest-btn {
+        width: 250px;
+        height: 55px;
+        font-size: 18px;
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .hero-right {
+        margin-top: 30px; /* Add space between left and right content */
+    }
+
+    .hero-right img {
+        max-width: 80%; /* Adjust image size for smaller layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 15px; /* Further reduce padding */
+    }
+
+    .hero-left {
+        gap: 10px; /* Further adjust gap */
+    }
+
+    .hero-left h2 {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .hero-left p {
+        font-size: 40px; /* Significantly reduce font size for large text */
+    }
+
+    .hero-hand-icon img {
+        width: 50px; /* Further reduce hand icon size */
+    }
+
+    .hero-latest-btn {
+        width: 220px; /* Ensure button is tappable */
+        height: 50px;
+        font-size: 16px;
+        margin-top: 15px; /* Adjust margin */
+    }
+    .hero-latest-btn img{
+        width: 20px; /* Adjust arrow icon size */
+    }
+
+    .hero-right img {
+        max-width: 90%; /* Ensure image scales well */
+    }
+}

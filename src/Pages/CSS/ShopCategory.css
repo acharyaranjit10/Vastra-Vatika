@@ -47,3 +47,80 @@ font-weight: 600;
   font-weight: 500;
 
 }
+
+@media (max-width: 768px) {
+  .shop-category img { /* Banner image */
+    max-height: 200px; /* Reduce banner height */
+  }
+  .shopcategory-indexSort {
+    margin: 0px 50px; /* Reduce margin */
+    flex-direction: column; /* Stack text and sort dropdown */
+    align-items: flex-start; /* Align to start */
+    gap: 10px; /* Add gap between stacked items */
+  }
+  .shopcategory-sort {
+    padding: 8px 15px; /* Adjust padding */
+    font-size: 13px; /* Adjust font size of sort button/text */
+  }
+  .shopcategory-indexSort p {
+    font-size: 13px; /* Reduce font size for "Showing X of Y" */
+  }
+
+  .shop-category-products {
+    margin: 20px 50px; /* Reduce margin */
+    grid-template-columns: 1fr 1fr; /* 2 items per row */
+    row-gap: 50px; /* Adjust row gap */
+  }
+  /* Assuming items within .shop-category-products use the .item class from Item.css */
+  /* The width for .item will be handled by Item.css media queries (calc(50% - X)) */
+  /* We just need to ensure the grid here supports that. */
+
+  .shopcategory-loadmore {
+    margin: 100px auto; /* Adjust margin */
+    width: 200px; /* Adjust width */
+    height: 45px; /* Adjust height */
+    font-size: 15px; /* Reduce font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-category img { /* Banner image */
+    max-height: 150px; /* Further reduce banner height */
+  }
+  .shopcategory-indexSort {
+    margin: 0px 20px 15px 20px; /* Adjust margin, add bottom margin for spacing */
+    gap: 8px;
+  }
+  .shopcategory-sort {
+    padding: 8px 12px;
+    font-size: 12px;
+    width: 100%; /* Make sort dropdown full width for easier tapping */
+    text-align: center; /* Center text in dropdown */
+  }
+  .shopcategory-sort img { /* Ensure icon in sort is still okay */
+    width: 14px;
+    height: 14px;
+  }
+  .shopcategory-indexSort p {
+    font-size: 12px;
+    width: 100%; /* Make text take full width if sort is full width */
+    text-align: center; /* Center text if sort is also centered */
+    margin-bottom: 5px; /* Space between text and sort */
+  }
+
+  .shop-category-products {
+    margin: 0 10px; /* Further reduce margin */
+    /* grid-template-columns: 1fr 1fr; /* Keep 2 items per row for mobile landscape */
+    /* Or use 1fr for 1 item per row if preferred, Item.css will make items full width */
+    grid-template-columns: 1fr; /* Change to 1 item per row for typical mobile portrait */
+    row-gap: 30px; /* Adjust row gap */
+  }
+  /* Item.css media query for 480px should handle item width to be 100% */
+
+  .shopcategory-loadmore {
+    margin: 60px auto;
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+  }
+}

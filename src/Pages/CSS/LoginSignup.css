@@ -76,6 +76,88 @@
     color: #5c5c5c;
 }
 
+@media (max-width: 768px) {
+    .loginsignup {
+        padding-top: 60px; /* Reduce top padding */
+        padding-bottom: 60px; /* Add some bottom padding */
+    }
+    .loginsignup-container {
+        padding: 30px 40px; /* Reduce padding */
+        width: 85%; /* Slightly reduce width if needed, or keep at 90% */
+    }
+    .loginsignup-container h1 {
+        font-size: 24px; /* Adjust h1 font size */
+        margin: 15px 0px;
+    }
+    .loginsignup-fields {
+        gap: 18px; /* Adjust gap */
+        margin-top: 25px;
+    }
+    .loginsignup-fields input {
+        height: 48px; /* Adjust input height */
+        font-size: 15px; /* Adjust input font size */
+    }
+    .loginsignup-container button {
+        height: 50px; /* Adjust button height */
+        font-size: 18px; /* Adjust button font size */
+        margin-top: 25px;
+    }
+    .loginsignup-login {
+        font-size: 15px; /* Adjust login text font size */
+    }
+    .loginsignup-agree p {
+        font-size: 13px; /* Adjust agree text font size */
+    }
+    .loginsignup-agree input { /* Ensure checkbox is still reasonably sized */
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginsignup {
+        padding-top: 30px; /* Further reduce top padding */
+        padding-bottom: 30px; /* Further reduce bottom padding */
+    }
+    .loginsignup-container {
+        padding: 20px 25px; /* Further reduce padding for very small screens */
+        width: 90%; /* Ensure it takes most of the width */
+    }
+    .loginsignup-container h1 {
+        font-size: 20px; /* Further reduce h1 font size */
+        margin: 10px 0px 15px; /* Adjust margin */
+    }
+    .loginsignup-fields {
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .loginsignup-fields input {
+        height: 45px; /* Ensure tappable height */
+        font-size: 14px;
+        padding-left: 12px;
+    }
+    .loginsignup-container button {
+        height: 48px; /* Ensure tappable height */
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .loginsignup-login {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .loginsignup-agree {
+        margin-top: 15px;
+        gap: 8px;
+    }
+    .loginsignup-agree p {
+        font-size: 12px;
+    }
+    .loginsignup-agree input {
+        width: 14px; /* Ensure checkbox is still tappable */
+        height: 14px;
+    }
+}
+
 .loginsignup-login span {
     color: #ff4141;
     font-weight: bold;

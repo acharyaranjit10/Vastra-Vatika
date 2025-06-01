@@ -100,3 +100,182 @@ padding: 15px 0px;
     cursor: pointer;
     font-size: 16px;
  }
+
+@media (max-width: 768px) {
+    .cartitems {
+        margin: 50px 50px; /* Reduce margin */
+    }
+    .ci-format {
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr 0.5fr; /* Adjust columns, e.g. make remove icon column smaller */
+        gap: 30px; /* Reduce gap */
+        font-size: 16px; /* Reduce font size */
+    }
+    .ci-f { /* Assuming this is for item rows */
+        font-size: 15px;
+    }
+    .cipi {
+        height: 50px; /* Adjust product image size */
+    }
+    .ci-rem {
+        margin: 0px 20px; /* Adjust margin for remove icon */
+    }
+    .ci-quantity {
+        width: 50px;
+        height: 40px;
+    }
+
+    .cartitems-down {
+        flex-direction: column; /* Stack total and promo section */
+        margin: 50px 0px;
+        gap: 50px; /* Add gap between stacked total and promo */
+    }
+    .ci-total {
+        margin-right: 0; /* Remove right margin as it's stacked now */
+        gap: 20px;
+    }
+    .ci-ti{
+        padding: 10px 0px;
+    }
+    .ci-total button {
+        width: 100%; /* Make button full width */
+        height: 50px;
+        font-size: 15px;
+    }
+    .ci-promo{
+        font-size: 15px;
+    }
+    .ci-pbox {
+        width: 100%; /* Make promo box full width */
+        height: 50px;
+    }
+    .ci-pbox input {
+        font-size: 15px;
+    }
+    .ci-pbox button {
+        height: 48px; /* Match input height better */
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cartitems {
+        margin: 30px 10px; /* Further reduce margin */
+    }
+    .cartitems hr{
+        margin: 10px 0;
+    }
+
+    /* Hide the original table header row */
+    .cartitems > .ci-format:first-child {
+        display: none;
+    }
+
+    /* Each cart item row becomes a block/flex column */
+    /* This selector targets all .ci-format elements except the first one (which is header) */
+    .cartitems > .ci-format:not(:first-child) {
+        display: flex;
+        flex-direction: row; /* Keep as row for image beside details */
+        flex-wrap: wrap; /* Allow details to wrap below image */
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px 5px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .cartitems > .ci-format:not(:first-child):last-of-type { /* Or :last-child if no other .ci-format after items */
+        border-bottom: none;
+    }
+
+    /* Container for product details, to sit next to image then wrap */
+    .ci-item-details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex: 1; /* Takes remaining space */
+    }
+
+    .cipi { /* Product Image */
+        height: 70px;
+        width: 70px; /* Give it a fixed width */
+        object-fit: cover;
+        margin-right: 10px; /* Space between image and details */
+    }
+
+    /* Product Title - Assuming it's the second child in the original grid cell structure */
+    /* Need to ensure this class exists or target by order if necessary */
+    .ci-product-title { /* This class should be on the text element for product name */
+        font-size: 15px;
+        font-weight: 600;
+        /* Example: if product title is the second div in the original grid structure */
+        /* .ci-format > div:nth-of-type(2) { font-size: 15px; font-weight: 600; } */
+    }
+
+    /* Price and original total per item */
+    /* Example: if price is the third div and item total is the fifth */
+    .ci-item-price, .ci-item-row-total {
+        font-size: 14px;
+    }
+    .ci-item-row-total { /* This was the 'Total' column for the item row */
+        display: none; /* Often redundant on mobile, as quantity * price is clear */
+    }
+
+
+    .ci-quantity { /* Quantity Input */
+        width: 60px;
+        height: 40px;
+        font-size: 15px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #ccc; /* Make border more visible */
+    }
+
+    .ci-rem { /* Remove Button */
+        width: auto;
+        padding: 8px 12px;
+        margin: 5px 0 0 0;
+        font-size: 13px;
+        background-color: #e74c3c; /* Adjusted color */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; /* Ensure cursor indicates tappable */
+    }
+
+    /* Hide original grid cells that are not image, quantity, or remove button if they are not part of .ci-item-details */
+    /* This is tricky without knowing exact HTML. Assuming .cipi, .ci-quantity, .ci-rem are distinct elements */
+    /* and other textual data is inside .ci-item-details or has specific classes. */
+    /* The general approach is to explicitly style what you want to see and how. */
+
+
+    .cartitems-down {
+        margin: 30px 0px;
+        gap: 25px;
+    }
+    .ci-total {
+        gap: 12px;
+    }
+    .ci-ti {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .ci-total button {
+        height: 45px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .ci-promo p{
+        font-size: 13px;
+    }
+    .ci-pbox {
+        height: 45px;
+        margin-top: 8px;
+        padding-left: 8px;
+    }
+    .ci-pbox input {
+        font-size: 13px;
+    }
+    .ci-pbox button {
+        height: 43px; /* Keep slightly smaller than box for border visibility */
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}

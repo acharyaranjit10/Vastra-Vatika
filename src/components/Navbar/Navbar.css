@@ -66,3 +66,64 @@
     justify-content: center;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 30px; /* Reduce gap between nav menu items */
+        font-size: 18px; /* Reduce font size for nav menu items */
+    }
+
+    .nav-login-cart button {
+        width: 100px; /* Reduce the size of the login button */
+        height: 40px;
+        font-size: 18px; /* Reduce font size for login button */
+    }
+
+    .nav-cart-count {
+        margin-left: -45px; /* Adjust cart count position */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px; /* Reduce padding */
+        justify-content: space-between; /* Adjust alignment for smaller screens */
+    }
+
+    .nav-logo img { /* Assuming there's an img tag for the logo icon */
+        height: 30px; /* Adjust logo icon size */
+    }
+
+    .nav-logo p {
+        display: none; /* Hide logo text */
+    }
+
+    .nav-menu {
+        gap: 15px; /* Further reduce gap */
+        font-size: 16px; /* Further reduce font size */
+        flex-wrap: wrap; /* Allow menu items to wrap */
+        justify-content: center; /* Center wrapped items */
+    }
+
+    .nav-login-cart {
+        gap: 20px; /* Reduce gap for login/cart */
+    }
+
+    .nav-login-cart button {
+        width: 80px; /* Make login button smaller */
+        height: 35px;
+        font-size: 16px; /* Further reduce font size for login button */
+    }
+
+    .nav-login-cart img { /* Assuming there's an img tag for the cart icon */
+        width: 25px; /* Make cart icon smaller */
+    }
+
+    .nav-cart-count {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        margin-top: -25px;
+        margin-left: -30px; /* Further adjust cart count position */
+    }
+}
