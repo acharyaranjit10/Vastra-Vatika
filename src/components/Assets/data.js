@@ -33,6 +33,13 @@ let data_product =[
     new_price:1680,
     old_price: 1850,
 },
+    {
+    id:5,
+    name:"Striped Flutter Sleeve Overlap ",
+    image:p4_img,
+    new_price:1680,
+    old_price: 1850,
+},
   
 ];
 
