@@ -10,7 +10,7 @@ import ap9_img from './newcol_5.jpg'
 import ap10_img from './newcol_6.jpg'
 import ap11_img from './newcol_7.jpg'
 import ap12_img from './newcol_8.jpg'
-import ap13_img from './newcol_9.jpg'
+
 
 
 
@@ -111,14 +111,7 @@ let all_product =[
     new_price:1680,
     old_price: 1850,
 },
-{
-    id:13,
-    name:"Ranjit Acharya ",
-    category:"men",
-    image:ap13_img,
-    new_price:1680,
-    old_price: 1850,
-},
+
   
 ];
 

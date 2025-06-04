@@ -143,8 +143,9 @@ const ProductDisplay = (props) => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <button
-                onClick={() => {
+               <button
+                onClick={() => { 
+                 
                   if (!selectedSize) {
                     alert("Please select a size first!");
                     return;
